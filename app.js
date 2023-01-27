@@ -51,15 +51,17 @@ let automaticUpgrades = [
 function drawDust(){
   let dustElem = document.getElementById('total-dust')
 
-  let template = ''
+  // let template = ''
 
-  template += /*html*/
-  `
-  <div class="card text-center display-6 d-flex align-items-center">
-  <div>Dust: ${dust}</div>
-  </div>
-  `
-  dustElem.innerHTML = template
+  // template += /*html*/
+  // `
+  // <div class="card text-center display-6 d-flex align-items-center">
+  // <div>Dust: ${dust}</div>
+  // </div>
+  // `
+  // dustElem.innerHTML = template
+
+  dustElem.innerText = dust
 }
 
 // SECTION additional functions

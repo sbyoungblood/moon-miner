@@ -13,3 +13,8 @@ body{
 .card{
   background-color: #ffffffa1;
 }
+
+.total-dust-card{
+  height: 112px;
+  width: 273px;
+}
