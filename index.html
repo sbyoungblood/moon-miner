@@ -16,6 +16,7 @@
     integrity="sha512-NaaXI5f4rdmlThv3ZAVS44U9yNWJaUYWzPhvlg5SC7nMRvQYV9suauRK3gVbxh7qjE33ApTPD+hkOW78VSHyeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c413f7e4c3.js" crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -41,10 +42,10 @@
   <header>
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-md-6 text-center pt-4 pb-3">
-          <h1 class="display-4 text-light">
+        <div class="col-md-6 text-center pt-3 pb-2">
+          <div class="display-4 text-light">
             MOON MINER
-          </h1>
+          </div>
         </div>
       </div>
     </div>
@@ -55,17 +56,31 @@
       <div class="row justify-content-center">
         <div class="col-md-3">
           <div class="card text-center display-6">
-            per click
+            <div class="row justify-content-between p-1">
+              <div class="col-md-5">
+                <i class="fa-solid fa-arrow-pointer"></i>
+              </div>
+              <div class="col-md-7">
+                0
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card text-center display-6" id="dust-total">
-            total resources
+        <div class="col-md-3" id="total-dust">
+          <div class="card text-center display-6">
+            <h3>total resources</h3>
           </div>
         </div>
         <div class="col-md-3">
           <div class="card text-center display-6">
-            per interval
+            <div class="row justify-content-between p-1">
+              <div class="col-md-7">
+                0
+              </div>
+              <div class="col-md-5">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -78,6 +93,13 @@
       </div>
       <div class="row justify-content-center justify-content-evenly">
         <div class="col-md-5 py-3">
+          <div class="row justify-content-center py-2">
+            <div class="col-md-6 text-center text-white display-6">
+              <div class="card title-card">
+                <div class=>UPGRADES</div>
+              </div>
+            </div>
+          </div>
           <div class="card">
             <div class="row">
               <div class="col-md-6">
@@ -92,6 +114,11 @@
           </div>
         </div>
         <div class="col-md-5 py-3">
+          <div class="row justify-content-center py-2">
+            <div class="col-md-6 text-center display-6">
+              <div class=>STATISTICS</div>
+            </div>
+          </div>
           <div class="card">
             <div class="row">
               <div class="col-md-6">
