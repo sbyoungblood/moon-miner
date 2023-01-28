@@ -4,10 +4,11 @@ body{
 }
 
 .moon-img {
-  height: 325px;
-  width: 325px;
+  height: 350px;
+  width: 350px;
   -webkit-backdrop-filter: drop-shadow(100px 100px 30rem lightblue);
   filter: drop-shadow(100px 100px 30rem lightblue);
+  transform: translateY(25px);
 }
 
 
@@ -27,6 +28,14 @@ body{
   width: 500px;
 }
 
+.moon-row{
+  height: 325px;
+}
+
 .moon-miner{
   font-family: 'Monofett', cursive;
+}
+
+.title{
+  letter-spacing: 3px;
 }
