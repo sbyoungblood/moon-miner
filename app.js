@@ -72,4 +72,8 @@ function mine(){
   drawDust()
 }
 
+function buyShovel(){
+  
+}
+
 
