@@ -40,7 +40,7 @@
   }
 </style>
 
-<body class="debug">
+<body class="">
 
   <header>
     <div class="container-fluid">
@@ -95,7 +95,7 @@
             alt="moon" class="moon-img" onclick="mine()">
         </div>
       </div>
-      <div class="row justify-content-evenly py-1">
+      <div class="row justify-content-between py-1">
         <!-- SECTION UPGRADES -->
         <div class="col-md-5 py-1">
           <div class="row justify-content-center py-2">
@@ -114,12 +114,12 @@
                       <i class="fa-solid fa-trowel"></i>
                     </div>
                     <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
+                      <button class="btn btn-outline-dark btn-lg" title="BUY A SHOVEL">
                         <i class="fa-solid fa-stroopwafel"> 100</i>
                       </button>
                     </div>
                     <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 1
+                      +1
                     </div>
                   </div>
                   <!-- SECTION BUY EXPLOSIVES -->
@@ -128,12 +128,12 @@
                       <i class="fa-solid fa-bomb"></i>
                     </div>
                     <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
+                      <button class="btn btn-outline-dark btn-lg" title="BUY EXPLOSIVES">
                         <i class="fa-solid fa-stroopwafel"> 250</i>
                       </button>
                     </div>
                     <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 5
+                      +5
                     </div>
                   </div>
                   <!-- SECTION BUY ROVER -->
@@ -142,98 +142,21 @@
                       <i class="fa-solid fa-truck-pickup"></i>
                     </div>
                     <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
+                      <button class="btn btn-outline-dark btn-lg" title="BUY A ROVER">
                         <i class="fa-solid fa-stroopwafel"> 500</i>
                       </button>
                     </div>
                     <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 10
+                      +10
                     </div>
                   </div>
                 </div>
-                <!-- <div class="col-md-6 py-1">
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-trowel"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="buy a shovel">
-                        <i class="fa-solid fa-stroopwafel">100</i>
-                      </button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 1</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-bomb"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="buy explosives">
-                        <i class="fa-solid fa-stroopwafel">250</i>
-                      </button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 5</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-truck-pickup"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="buy a rover">
-                        <i class="fa-solid fa-stroopwafel">500</i>
-                      </button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 10</i>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- #endregion per click-->
-                <!-- #region per interval -->
-                <!-- <div class="col-md-6 py-1">
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-user-astronaut"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="hire an astronaut">1000</button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 20</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-cube"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="build a habitat">2500</button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 50</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-cubes"></i>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <button class="btn btn-outline-dark" title="build a colony">5000</button>
-                    </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 100</i>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- #endregion per interval-->
+                <!-- #endregion per click -->
               </div>
             </div>
           </div>
         </div>
+        <!-- SECTION AUTOMATION -->
         <div class="col-md-5 py-1">
           <div class="row justify-content-center py-2">
             <div class="col-md-6 card text-center fs-2">
@@ -243,121 +166,52 @@
           <div class="row justify-content-center">
             <div class="col-12 d-flex justify-content-center">
               <div class="row card upgrades-card justify-content-center p-2">
-                <!-- #region per click-->
+                <!-- #region interval-->
                 <div class="col-12">
-                  <!-- SECTION BUY ROVER -->
+                  <!-- SECTION HIRE ASTRONAUT -->
                   <div class="row fs-5 justify-content-center py-1">
                     <div class="col-3 text-end d-flex flex-column justify-content-center">
-                      <i class="fa-solid fa-trowel"></i>
-                    </div>
-                    <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
-                        <i class="fa-solid fa-stroopwafel"> 100</i>
-                      </button>
-                    </div>
-                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 1
-                    </div>
-                  </div>
-                  <!-- SECTION BUY EXPLOSIVES -->
-                  <div class="row fs-5 justify-content-center py-1">
-                    <div class="col-3 text-end d-flex flex-column justify-content-center">
-                      <i class="fa-solid fa-bomb"></i>
-                    </div>
-                    <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
-                        <i class="fa-solid fa-stroopwafel"> 250</i>
-                      </button>
-                    </div>
-                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 5
-                    </div>
-                  </div>
-                  <!-- SECTION BUY ROVER -->
-                  <div class="row fs-5 justify-content-center py-1">
-                    <div class="col-3 text-end d-flex flex-column justify-content-center">
-                      <i class="fa-solid fa-truck-pickup"></i>
-                    </div>
-                    <div class="col-6 text-center d-flex flex-column justify-content-center">
-                      <button class="btn btn-outline-dark btn-lg">
-                        <i class="fa-solid fa-stroopwafel"> 500</i>
-                      </button>
-                    </div>
-                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-5">
-                      + 10
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 py-1">
-                  <div class="row py-1 mb-2 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-trowel"></i>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x 0</div>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 1</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-bomb"></i>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x 0</div>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 5</i>
-                    </div>
-                  </div>
-                  <div class="row py-1 mt-2 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-truck-pickup"></i>
-                    </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x 0</div>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-arrow-pointer"> + 10</i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 py-1">
-                  <div class="row py-1 mb-2 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
                       <i class="fa-solid fa-user-astronaut"></i>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x0</div>
+                    <div class="col-6 text-center d-flex flex-column justify-content-center">
+                      <button class="btn btn-outline-dark btn-lg" title="HIRE AN ASTRONAUT">
+                        <i class="fa-solid fa-stroopwafel"> 1000</i>
+                      </button>
                     </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 20</i>
+                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-6">
+                      +20 / 3s
                     </div>
                   </div>
-                  <div class="row py-1 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                  <!-- SECTION BUILD HABITAT -->
+                  <div class="row fs-5 justify-content-center py-1">
+                    <div class="col-3 text-end d-flex flex-column justify-content-center">
                       <i class="fa-solid fa-cube"></i>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x0</div>
+                    <div class="col-6 text-center d-flex flex-column justify-content-center">
+                      <button class="btn btn-outline-dark btn-lg" title="BUILD A HABITAT">
+                        <i class="fa-solid fa-stroopwafel"> 2500</i>
+                      </button>
                     </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 50</i>
+                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-6">
+                      +50 / 3s
                     </div>
                   </div>
-                  <div class="row py-1 mt-2 justify-content-center">
-                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                  <!-- SECTION BUILD COLONY -->
+                  <div class="row fs-5 justify-content-center py-1">
+                    <div class="col-3 text-end d-flex flex-column justify-content-center">
                       <i class="fa-solid fa-cubes"></i>
                     </div>
-                    <div class="col-md-3 d-flex align-items-center justify-content-center fs-5">
-                      <div>x0</div>
+                    <div class="col-6 text-center d-flex flex-column justify-content-center">
+                      <button class="btn btn-outline-dark btn-lg" title="BUILD A COLONY">
+                        <i class="fa-solid fa-stroopwafel"> 5000</i>
+                      </button>
                     </div>
-                    <div class="col-md-5 d-flex align-items-center justify-content-center">
-                      <i class="fa-solid fa-clock"> + 100</i>
+                    <div class="col-3 text-start d-flex flex-column justify-content-center fs-6">
+                      +100 / 3s
                     </div>
                   </div>
                 </div>
+                <!-- #endregion interval -->
               </div>
             </div>
           </div>
