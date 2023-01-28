@@ -10,11 +10,19 @@ body{
   filter: drop-shadow(100px 100px 30rem lightblue);
 }
 
-.card{
-  background-color: #ffffffa1;
-}
 
 .total-dust-card{
   height: 112px;
   width: 273px;
+}
+
+.card{
+  background-color: #ffffffa1;
+  border: 3px solid black;
+  color: black;
+}
+
+.upgrades-card{
+  height: 150px;
+  width: 500px;
 }

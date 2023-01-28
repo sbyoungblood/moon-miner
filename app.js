@@ -6,13 +6,13 @@ let dust = 0
 
 let clickUpgrades = [
   {
-    name: 'pickaxe',
+    name: 'shovel',
     price: 100,
     quantity: 0,
     multiplier: 1
   },
   {
-    name: 'drill',
+    name: 'bomb',
     price: 250,
     quantity: 0,
     multiplier: 5
