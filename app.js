@@ -24,7 +24,8 @@ let upgrades = [
     name: 'rover',
     price: 500,
     quantity: 0,
-    multiplier: 10
+    multiplier: 10,
+    type: "click"
   }
 ];
 
@@ -33,7 +34,8 @@ let automation = [
     name: 'astronaut',
     price: 1000,
     quantity: 0,
-    multiplier: 20
+    multiplier: 20,
+    type: "auto"
   },
   {
     name: 'habitat',
@@ -48,6 +50,9 @@ let automation = [
     multiplier: 100
   }
 ];
+
+let upgrade=[]
+
 
 // SECTION draw functions
 
@@ -83,8 +88,12 @@ function drawClickTotal(){
   clickTotal = shovelClickTotal + explosivesClickTotal + roverClickTotal + click
   console.log(clickTotal);
 
-  let clickTotalElem = document.getElementById('click-total')
-  clickTotalElem.innerHTML = `${clickTotal}`
+upgrades.forEach(u=>{
+  clickTotal+=u.multiplier * u.quantity
+})
+clickTotal+=click
+let clickTotalElem = document.getElementById('click-total')
+clickTotalElem.innerHTML = `${clickTotal}`
 }
 
 
@@ -187,10 +196,21 @@ function drawRoversTotal(){
   roversPriceElem.innerHTML = ` ${roversPrice.price.toFixed(0)}`
 }
 
-function drawUpgradeTotals(){
-  drawShovelTotal()
-  drawExplosivesTotal()
-  drawRoversTotal()
+
+
+function drawUpgradeTotals(upgrade){
+  // drawShovelTotal()
+  // drawExplosivesTotal()
+  // drawRoversTotal()
+console.log(upgrade)
+
+let upgradeTotalElem = document.getElementById(`total-${upgrade.name}`)
+let upgradePriceElem = document.getElementById(`${upgrade.name}-price`)
+
+upgradeTotalElem = upgrade.quantity
+upgradePriceElem=upgrade.price
+
+
 }
 
 // SECTION additional functions
@@ -229,7 +249,7 @@ function purchaseUpgrade(upgradeName){
   
   // console.log(purchasedUpgrade);
   drawClickTotal()
-  drawUpgradeTotals()
+  drawUpgradeTotals(purchaseUpgrade)
   drawDust()
 }
 function purchaseAutomation(automationName){
