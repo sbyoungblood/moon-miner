@@ -1,6 +1,6 @@
 // SECTION variables
 
-let totalDust = 0
+let totalDust = 80
 let click = 1
 let clickTotal = 0
 let intervalTotal = 0
